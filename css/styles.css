@@ -1,0 +1,53 @@
+@import url("./burger-nav.css");
+@import url("./variables.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    background-color: var(--sec);
+}
+.main-container-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 2%;
+}
+
+.little-diamond{
+    width: 2%;
+}
+.little-circle {
+    width: 3%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.10em;
+}
+
+.main-paragraph {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7em;
+    font-style: italic;
+    padding: 1% 8%;
+    color: grey;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    gap: 5%;
+}
+
+.download-red{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 0%;
+    padding: 1%;
+    font-size: 0.6em;
+}

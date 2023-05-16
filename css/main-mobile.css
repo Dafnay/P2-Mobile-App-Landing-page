@@ -85,15 +85,21 @@
     align-items: center;
     font-size: .5em;
     font-weight: 700;
-    width: 23vw;
-    height: 8vh;
+    width: 15vw;
+    height: 15vw;
     border-radius: 50%;
+}
+
+.social-buttons img {
+    width: 6vw;
+    height: 6vw;
 }
 .social-buttons-display {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    text-align: center;
+    
 }
 
  .details {

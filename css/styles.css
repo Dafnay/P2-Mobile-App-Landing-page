@@ -28,7 +28,7 @@
     align-items: center;
     width: 90%;
     color: #C4C6C9;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .description-photo {
@@ -38,7 +38,7 @@
 
 .title-description {
     margin: 3% 0;
-    font-size: 2em; 
+    font-size: 1em; 
     font-weight: 700;
     text-align: center;
     color: black;
@@ -46,10 +46,16 @@
 
 .description p {
     font-style: italic;
+    font-size: .8em;
+    text-align: center;
 }
 
 .description li {
+    font-style: italic;
+    font-size: .7em;
     list-style: square;
+    align-items: center;
+    margin-left: 10%;
 }
 
 

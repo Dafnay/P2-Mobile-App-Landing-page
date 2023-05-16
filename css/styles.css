@@ -19,46 +19,6 @@
 
 }
 
-
-.description {
-    display: flex;
-    justify-content: center;
-    /* hay que quitar este flex direction para que la vista del desktop no se ponga en column */
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    color: #C4C6C9;
-    font-size: 1.2em;
-}
-
-.description-photo {
-    width: 50%;
-    height: 50%;
-}
-
-.title-description {
-    margin: 3% 0;
-    font-size: 1em; 
-    font-weight: 700;
-    text-align: center;
-    color: black;
-}
-
-.description p {
-    font-style: italic;
-    font-size: .8em;
-    text-align: center;
-}
-
-.description li {
-    font-style: italic;
-    font-size: .7em;
-    list-style: square;
-    align-items: center;
-    margin-left: 10%;
-}
-
-
 footer {
     grid-area: footer;
 }

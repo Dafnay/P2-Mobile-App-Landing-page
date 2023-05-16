@@ -20,7 +20,38 @@
 }
 
 
-section
+.description {
+    display: flex;
+    justify-content: center;
+    /* hay que quitar este flex direction para que la vista del desktop no se ponga en column */
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    color: #C4C6C9;
+    font-size: 1em;
+}
+
+.description-photo {
+    width: 50%;
+    height: 50%;
+}
+
+.title-description {
+    margin: 3% 0;
+    font-size: 2em; 
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.description p {
+    font-style: italic;
+}
+
+.description li {
+    list-style: square;
+}
+
 
 footer {
     grid-area: footer;

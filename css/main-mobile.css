@@ -20,8 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  position: fixed;
+    position: fixed;
   top: 0;
   background-color: #ffffff;
   box-shadow: 0 1px 4px #92a1b026;
@@ -185,6 +184,7 @@ align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 2.5em;
     padding: 0 2%;
+    font-weight: 700;
 }
 .main-container-paragraph {
     display: flex;
@@ -211,12 +211,10 @@ align-items: center;
 .download-red{
     background-color: var(--primary-color);
     color: white;
-    background-color:#ff556e;
 	border-radius:28px;
 	border:1px solid #ff556e;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
 	font-family:'Open Sans', sans-serif;;
 	font-size:15px;
     font-weight: 700;
@@ -305,8 +303,6 @@ align-items: center;
 .description {
     display: flex;
     justify-content: center;
-    /* hay que quitar este flex direction para que la vista del desktop no se ponga en column */
-    flex-direction: column;
     align-items: center;
     color: grey;
     font-size: 1.2em;
@@ -371,29 +367,48 @@ align-items: center;
 }
 
 .mobile-calendar .calendar-photo {
-    width: 75%;
-    max-width: 450px;
-    height: 50%;
-    max-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    max-width: 500px;
+    height: 55vw;
+    max-height: 500px;
+    position: relative;
+    /* bottom: 25%; */
+    left: 20%;
 
+
+}
+.calendar-photo{
+    width: 50vw;
+    height: 60%;
+}
+.calendar-btn{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
 }
 .mobile-calendar-buttons button{
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     color:#777777;
 	font-family:'Open Sans', sans-serif;;
 	font-size:10px;
-	padding: 5% 5%;
+	padding: 3% 0%;
     gap:2%;
     background-color: #ffffff;
 
 }
 
-
+.calendar-view{
+    display: flex;
+}
 #schedule-btn {
     background-color: #9A67E7;
     border:3px solid #9A67E7;
@@ -403,7 +418,7 @@ align-items: center;
 .details-calendar{
     display: flex;
     flex-direction: column;
-    flex-direction: center;
+    width: 40%;
     text-align: start;
     color: grey;
     font-size: 15px;
@@ -429,11 +444,7 @@ align-items: center;
     gap: 2%;
 
 }
-.calendar-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .privacy {
     background-color: #ffffff;
@@ -558,6 +569,7 @@ button:active {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 3%;
     
 }
 footer {
@@ -566,8 +578,9 @@ footer {
     box-shadow: 10px #92a1b026;
 }
   .contact-view{
-    width: 100%;
+    width: 100vw;
     display: flex;
+    background-color: var(--secondary-color) ;
 } 
  .contact-page{
     display: flex;
@@ -632,4 +645,105 @@ footer {
     box-shadow: #f6abb5 0px 2px 70px 4px;
     transition: all 0.2s ease;
     color: #f4eff0;
+}
+
+/* DE AQUÍ PARA ABAJO DESKTOP */
+@media screen and (min-width: 1024px) {
+
+
+  
+    .title{
+        font-size: 90px;
+        font-weight: 700;
+    }
+    
+    .main-paragraph {
+        font-size: 40px;
+    }
+    
+    .details p{
+        font-size: 30px;
+    }
+    .main-mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .mobile{
+        max-width: 45%;
+        
+    }
+    .title-description{
+        display: flex;
+        justify-content: flex-start;
+        font-size: 50px;
+        text-align: start;
+    }
+    .description-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 10%;
+    }
+    .description-container p{
+        font-size: 40px;
+        text-align: start;
+
+    }
+    
+    .description-container ul{
+        font-size: 20px;
+    }
+
+    .description-view{
+        display: flex;
+       
+    }
+    .description p {
+        font-style: italic;
+        font-size: 25px;
+        text-align: start;
+    }
+    .details-calendar {
+        font-size: 25px;
+    }
+    .details-list{
+        font-size: 20px;
+    }
+
+    .screens-view-comment{
+        font-size: 20px;
+    }
+
+    .stat-icon-number{
+        font-size: 50px;
+    }
+
+    .stat-icon-detail{
+        font-size: 20px;
+    }
+    .mobile-menu-view{
+        font-size: 20px;
+    }
+
+    .contact-view{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /* .mobile-calendar .calendar-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45vw;
+    max-width: 500px;
+    height: 55vw;
+    max-height: 500px;
+    position: relative;
+    bottom: 25%;
+    left: 20%;
+ */
+
 }

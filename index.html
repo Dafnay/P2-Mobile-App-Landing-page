@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile Landing Page</title>
     <link rel="stylesheet" href="./css/styles.css">
+     <link rel="stylesheet" media="(max-width:800px) and (min-width:451px)" href="./css/main-mobile.css">
 </head>
 <body>
  <div class="view-container">
     <header>
         <nav class="navbar">
             <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
+                <input class="checkbox " type="checkbox" name="" id="toggle" />
                 <div class="hamburger-lines">
                   <span class="line line1"></span>
                   <span class="line line2"></span>
@@ -22,10 +23,10 @@
                     <img src="./assets/logo.svg" alt="logo">
                   </div>
               <div class="menu-items">
-                <li><a href="#">DESCRIPTION</a></li>
+                <li><a href="#description-view">DESCRIPTION</a></li>
                 <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SCREENS</a></li>
-                <li><a href="#">EXTRA</a></li>
+                <li><a href="#user-testimonials-view">SCREENS</a></li>
+                <li><a href="#extra-view">EXTRA</a></li>
               </div>
             </div>
         </nav>
@@ -43,8 +44,13 @@
                 connections to help you stay focused and get organized</p>
             </section>
             <section class="main-button">
-                <input type="button" class="download-red" value="DOWNLOAD">
-                <input type="button" class="download-red" value="DOWNLOAD">
+                
+                <button type="button" class="download-red" value="DOWNLOAD">
+                    <img src="./assets/618258BD-686D-4DCA-94E6-A925D051F46E.png" alt="Apple icon">DOWNLOAD
+                </button>
+                <button class="download-red" value="DOWNLOAD">
+                    <img src="./assets/D91623B4-C4EC-496A-BBEA-1DFAC849EBF6.png" alt="Android Icon">DOWNLOAD
+                </button>
             </section>
             <section class="main-mobile">
                 <img src="./assets/header-iphone.png" alt="Foto de movil vibrando" class="mobile">
@@ -111,7 +117,7 @@
     </div>          
             </section>
         
-    <section class="description">
+    <section  id="description-view" class="description">
         <img class="description-photo" src="./assets/description-1-app.png" alt="Description Photo">
         <div class="description-container">
             <h2 class="title-description">Organize Your Time And Start Getting Results</h2>
@@ -123,51 +129,201 @@
                 <li>Begin monitoring your day to day routine with Sync app</li>
                 <li>See the improved results in no more than a couple of weeks</li>
             </ul>
-            <input class="download-red btn-lightbox"type="button" value="LIGHTBOX">
+            <button class="download-red btn-lightbox"type="button" value="LIGHTBOX">LIGHTBOX</button>
 
         </div>
     </section>
 
     <section class="mobile-calendar">
-        <img src="./assets/description-2-app.png" alt="Calendar Photo">
+        <img  class="calendar-photo" src="./assets/description-2-app.png" alt="Calendar Photo">
 
         <div class="mobile-calendar-buttons">
             <button type="button" value="Schedule" id="schedule-btn">
-            <img src="./assets/icons8-reloj-24.png" alt="Clock Icon"></button>
+            <img src="./assets/icons8-reloj-24.png" alt="Clock Icon">SCHEDULE</button>
            
             <button type="button" value="Tracking" id="tracking-btn">
-            <img src="./assets/icons8-list-32.png" alt="Tracking Icon"></button>
+            <img src="./assets/icons8-list-32.png" alt="Tracking Icon">TRACKING</button>
     
             <button type="button" value="Organize" id="organize-btn">
-            <img src="./assets/icons8-calendario-24 (1).png" alt="Calendar Icon"></button>
+            <img src="./assets/icons8-calendario-24 (1).png" alt="Calendar Icon">ORGANIZE</button>
         </div>
        
-        <div class="details-calendar">
+        <section class="details-calendar">
            <p><b>Schedule task</b> to keep track of their completion. Sync provides multiple
             scheduling options including alarms and reminders.
            </p> 
-           <ul class="details-list">
-            <li><img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
+           <article class="details-list">
+            <p><img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
                 You can easy always add new tasks or change the settings of existing ones 
                 in your calendar view or de app control panel</li>
-            <li><img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
+            <p><img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
                 It´s easy to stay focused o your most important daily activities that will get 
                 you closer to meeting your goals</li>
-            <li> <img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
+            <p> <img src="./assets/icons8-casilla-de-verificación-marcada-24.png" alt="">
                 Use phone reminders to free up your long term memory which will reduce
                 stress and make you more productive</li>
-           </ul>
+            </article>
+        </section>
+        <div class="calendar-btn">
+            <button type="button" class="download-red" value="TERMS">TERMS</button>
+            <button type="button" class="download-red privacy" value="PRIVACY">PRIVACY</button>
         </div>
-        <div class="calendar-tbn">
-            <input type="button" class="download-red" value="TERMS">
-            <input type="button" class="download-red privacy" value="PRIVACY">
-
-        </div>
-        
     </section>
+
+    <section id="user-testimonials-view" class="screens-view">
+        <h2 class="title-description">User Testimonials</h2>
+
+        <div class="screens-view-stars">
+
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> I love using Sync for my personal development needs. It meets all my requirements 
+                and it actually helps a lopt with focusing skills</p>
+            <p class="screens-people">Rick Jones - Designer</p>
+        </div>
+
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> After trying out a large number of personal coaching apps I decided to give Sync a try and what 
+                a wonderful surprise it was
+            </a></p>
+            <p class="screens-people">Linda Marquez- Developer</p>
+        </div>
+
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> I never dreamed I could learn so fast how to focus on my personal goals and improve my life
+                to levels I never thought posible
+            </p>
+            <p class="screens-people">Jay Frisco - Marketer</p>
+        </div>
+    </div>
+        <div class="logo-box">
+            <img class="logo-box-icon" src="./assets/customer-logo-1.png" alt="Logo de primester">
+            <img class="logo-box-icon" src="./assets/customer-logo-2.png" alt="Logo de Green App">
+            <img class="logo-box-icon" src="./assets/customer-logo-3.png" alt="Logo de Voltmeter">
+            <img class="logo-box-icon" src="./assets/customer-logo-4.png" alt="Logo de Keyrunner">
+            <img class="logo-box-icon" src="./assets/customer-logo-5.png" alt="Logo de Amplifier">
+        </div>
+
+        <div class="screens-view-stars">
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> I got so much value from using Sync in my daily life for which I am very grateful and would recommend 
+                it to everybody</p>
+            <p class="screens-people">Frank Gibson - Manager</p>
+        </div>
+
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> If you have great goals but can't figure out a way to keep focused then you should definitely give Sync 
+                a try and see the results </p>
+            <p class="screens-people"> Rita Longmile - Designer</p>
+        </div>
+
+        <div class="screens-view-comment">
+            <img src="./assets/D2FC58C6-3471-4E29-9CD0-3D29F8872D78.png" alt="Stars icon">
+            <p>---------</p>
+            <p> I've been looking for a great organizer app for such a long time but now I am really happy that I found Sync. 
+                It's been working great </p>
+            <p class="screens-people">Jones Smith - Developer</p>
+        </div>
+    </div>
+    </section>
+    <section id="extra-view" class="social-button-stats">
+        <div class="stats-icon-box">
+            <img class="stat-icon" src="./assets/icons8-llamada-de-conferencia-48.png" alt="">
+            <p class="stat-icon-number">231</p>
+            <p class="stat-icon-detail">Happy Users</p>
+        </div>
+        <div class="stats-icon-box">
+            <img class="stat-icon" src="./assets/icons8-código-fuente-52.png" alt="">
+            <p class="stat-icon-number">385</p>
+            <p class="stat-icon-detail">Issues Solved</p>
+        </div>
+        <div class="stats-icon-box">
+            <img class="stat-icon" src="./assets/icons8-ajustes-50.png" alt="">
+            <p class="stat-icon-number">159</p>
+            <p class="stat-icon-detail">Good Reviews</p>
+        </div>
+        <div class="stats-icon-box">
+            <img class="stat-icon" src="./assets/icons8-conversacion-64.png" alt="">
+            <p class="stat-icon-number">127</p>
+            <p class="stat-icon-detail">Case Studies</p>
+        </div>
+        <div class="stats-icon-box">
+            <img class="stat-icon" src="./assets/icons8-cohete-48.png" alt="">
+            <p class="stat-icon-number">211</p>
+            <p class="stat-icon-detail">Orders Received</p>
+        </div>
+    </section>
+    <section class="mobile-menu">
+        <div class="mobile-menu-view">
+            <img src="./assets/download-iphone.png" alt="Menu Mobile">
+            <p> Do you feel you´re wasting time with small stuff instead of working towards your goals
+                Start using Sync to organize your time and get grip on your personal development
+            </p>
+            <div class="mobile-menu-button">
+            <button class="download-red" value="DOWNLOAD">
+                <img src="./assets/618258BD-686D-4DCA-94E6-A925D051F46E.png" alt="Apple Icon">DOWNLOAD
+            </button>
+            <button class="download-red" value="DOWNLOAD">
+                <img src="./assets/D91623B4-C4EC-496A-BBEA-1DFAC849EBF6.png" alt="Android Icon">DOWNLOAD
+            </button>
+        </div>
+        </div>
+    </section>
+
         </main>
+
         <footer>
-            <h2></h2></footer>
+            <section class="contact-page">
+              <section class="contact-view">
+                <div class="contact">
+                    <h5 class="contact-titles">Contact Info</h5>
+                    <p> <img src="./assets/E9368F0F-F9C1-413B-8D32-1526E9F1F184.png" alt="Contact icon">
+                    22 Innovation Street, CA, US</p>
+                    <p><img src="./assets/CDE667A6-FEA9-4553-976C-B7009E5F3333.png" alt="Contact icon">
+                    office@cyncmobile.com</p>
+                    <p> <img src="./assets/B9DAC75E-7401-4A4D-8AD9-EC73A907C5E4.png" alt="Contact icon">
+                    +44 376 945 23</p>
+                </div>
+                <div class="contact">
+                    <h5 class="contact-titles">Value Links</h5>
+                   
+                    <p>Terms % Conditions</p>
+                    <p>Privacy Policy</p>
+                    <p>Article Details</p>
+                </div>
+
+                <div class="contact">
+                    <h5 class="contact-titles">Other Apps</h5>
+                   
+                    <p>Scientifics Calculator</p>
+                    <p>Advanced Timer</p>
+                    <p>Music Store</p>
+                </div>
+                <section class="icons-contact">
+
+                    <img src="./assets/5699F05F-AB2B-4481-804F-F5019A398997.png" alt="Facebook Icon">
+                    <img src="./assets/1155C9B1-6B5B-4F63-B06E-2F2E02024AE3.png" alt="Twitter Icon">
+                    <img src="./assets/3E260D2D-DE9F-4833-829E-9F0E170C2DEC.png" alt="Pinterest Icon">
+                    <img src="./assets/7EB1510F-2B66-49E1-9876-0B2B5701C3E2.png" alt="Instagram Icon">
+              </section>
+            </section>
+
+            
+    </section>
+        <section class="copy">
+            <span>Copyright <img src="./assets/4A32AFF2-D2DF-4254-9033-D0718D8339BE.png" alt="Copyright Icon">
+                2020 inovatik - All Rights Reserved </span>
+        </section>
+        </footer>
    
  </div> 
 </body>

@@ -1,6 +1,5 @@
-@import url("./burger-nav.css");
-@import url("./variables.css");
 @import url("./reset.css");
+@import url("./variables.css");
 @import url("./main-mobile.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
@@ -16,9 +15,5 @@
     grid-gap: 0.2rem;
     background-color: var(--secondary-color);
     font-family:'Open Sans', sans-serif;
-
-}
-
-footer {
-    grid-area: footer;
+    
 }

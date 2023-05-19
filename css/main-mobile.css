@@ -224,10 +224,6 @@ body {
 
 
 .description {
-    display: flex;
-    justify-content: center;
-    /* hay que quitar este flex direction para que la vista del desktop no se ponga en column */
-    flex-direction: column;
     align-items: center;
     color: grey;
     font-size: 1.2em;
@@ -246,6 +242,7 @@ body {
     max-width: 400px;
     height: 46vw;
     max-height: 450px;
+    align-items: center;
 }
 
 .title-description {
@@ -279,23 +276,31 @@ body {
 
 /* VISTA DEL CALENDARIO */
 
+.calendar-view{
+    display: flex;
+    justify-content:flex-start;
+}
+
 .mobile-calendar{
     margin-top: 20%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-color: #E8EFF6;
-    /* padding-bottom: 4%; */
     padding: 4% 5%;
     text-align: center;
 }
-
+.calendar-img{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
 .mobile-calendar .calendar-photo {
-    width: 75%;
-    max-width: 450px;
-    height: 50%;
-    max-height: 450px;
+    width: 55vw;
+    max-width: 600px;
+    height: 55vw;
+    max-height: 600px;
 
 }
 .mobile-calendar-buttons button{
@@ -308,7 +313,7 @@ body {
     color:#777777;
 	font-family:'Open Sans', sans-serif;;
 	font-size:10px;
-	padding: 5% 5%;
+	padding: 3% 3%;
     gap:2%;
     background-color: #ffffff;
 
@@ -323,12 +328,13 @@ body {
 
 .details-calendar{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    flex-direction: center;
     text-align: start;
     color: grey;
     font-size: 15px;
     font-weight:lighter;
+    width: 50%;
 }
 .details-list{
     margin-top: 5%;
@@ -352,7 +358,7 @@ body {
 }
 .calendar-btn{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -566,7 +572,13 @@ footer {
 .social-icon:hover{
     transform: scale(1.5); 
 }
+.stat-icon{
+    transition: transform .2s; 
+}
 
+.stat-icon:hover{
+    transform: scale(1.5); 
+}
 .mobile{
     animation: tiembla 0.1s infinite;
   }
@@ -577,84 +589,3 @@ footer {
     100%{ transform:rotateZ( 5deg); }
   }
 
-/* A PARTIR DE AQUI EMPIEZAN LAS MEDIAS */
-
-@media only screen and (min-width: 1024px) {
-
-    .navbar-expand-lg .navbar-nav {
-    flex-direction: row;
-    align-items: center;
-    }
-
-    .download-red1{
-        margin-top: 0;
-    }
-
-    .nav-link:active{
-        color: var(--primary-color);
-        font-size: 50px;
-    }
-   
-    .title{
-        font-size: 100px;
-    }
-
-    .main-paragraph{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin:0%  10%;
-        font-size: 30px;
-    }
-
-    .download-red{
-       font-size: 20px;
-    }
-
-    .mobile{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 500px;
-    }
-    .details{
-        font-size: 20px;
-    }
-    .description{
-        display: flex;
- 
-    }
-    .title-description{
-        font-size: 50px;
-    }
-
-    .description p{
-        font-size: 30px;
-    }
-    .description ul{
-        font-size: 25px;
-    }
-
-    .details-calendar p{
-        font-size: 30px;
-    }
-    .details-list{
-        font-size: 15px;
-    }
-
-    .screens-view-comment{
-        font-size: 20px;
-    }
-
-    .stat-icon-number{
-        font-size: 30px;
-    }
-
-    .stat-icon-detail{
-        font-size: 20px;
-    }
-
-    .mobile-menu-view p{
-        font-size: 20px;
-    }
-}

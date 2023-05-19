@@ -1,0 +1,86 @@
+/* A PARTIR DE AQUI EMPIEZAN LAS MEDIAS */
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .download-red1{
+        margin-top: 0;
+    }
+
+    .nav-link:active{
+        color: var(--primary-color);
+        font-size: 50px;
+    }
+   
+    .title{
+        font-size: 100px;
+    }
+
+    .main-paragraph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:0%  10%;
+        font-size: 30px;
+    }
+
+    .download-red{
+       font-size: 20px;
+    }
+
+    .mobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+    }
+    .details{
+        font-size: 20px;
+    }
+    .description{
+        display: flex;
+ 
+    }
+    .title-description{
+        font-size: 50px;
+    }
+
+    .description p{
+        font-size: 30px;
+    }
+    .description ul{
+        font-size: 25px;
+    }
+
+    .details-calendar p{
+        font-size: 30px;
+    }
+    .details-list{
+        font-size: 15px;
+    }
+
+    .screens-view-comment{
+        font-size: 20px;
+    }
+
+    .stat-icon-number{
+        font-size: 30px;
+    }
+
+    .stat-icon-detail{
+        font-size: 20px;
+    }
+
+    .mobile-menu-view p{
+        font-size: 20px;
+    }
+    .calendar-btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

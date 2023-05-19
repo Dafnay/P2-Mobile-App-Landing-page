@@ -560,11 +560,14 @@ footer {
 .nav-item a:active{
     color: var(--primary-color);
 }
-.social-buttons:hover{
-    background-color: #2f6627;
+.social-icon{
+    transition: transform .2s; 
+}
+.social-icon:hover{
+    transform: scale(1.5); 
 }
 
-.mobile2{
+.mobile{
     animation: tiembla 0.1s infinite;
   }
 

@@ -10,10 +10,10 @@ Requisitos:
 <ul>
   <li>la paleta de colores, la fuente y la iconografía</li>
 <li>los tamaños de los elementos son iguales a los elementos del mockup</li>
-<li>la página es responsive : por defecto construida para vista del escritorio, incluye una media query para pantallas 320 - 834px, lo que permite una buena vista en dispositivos móviles, tablets y pantallas grandes</li>
+<li>la página es responsive : por defecto construida para vista de movil, incluye una media query para pantallas a partir de 1024, lo que permite una buena vista en dispositivos móviles, tablets y pantallas grandes</li>
 <li>la navbar es estática y no se mueve al hacer scroll en la página</li>
 <li>los botones de la NAVBAR son clicables y llevan al usuario a sus apartados correspondientes</li>
-<li>el botón de Download lleva a la página de factoría</li>
+<li>los botones de Download lleva a la página de factoría</li>
 <li>el móvil de la sección “Mobile app landing page” cuenta con una animación</li>
 <li>cuando el usuario se pase por encima de un botón se ve un efecto de brillo</li>
 <li>cuando un usuario pasa por encima de un icono, estos están animados</li>
